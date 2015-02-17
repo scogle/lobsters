@@ -4,6 +4,8 @@ gem "rails", "4.1.8"
 
 gem "unicorn"
 
+gem "sass-rails"
+
 gem "mysql2", ">= 0.3.14"
 
 # uncomment to use PostgreSQL

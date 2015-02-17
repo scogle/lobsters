@@ -104,14 +104,19 @@
       <% end %>
 
       <%= yield %>
-
+      
+      <div class="clear"></div>
       <div id="footer">
-        <a href="/moderations">Moderation Log</a>
+        Created in Fort Collins, CO by 
+        <a href="http://semanticarts.com">Semantic Arts</a> 
+        using <a href="https://github.com/jcs/lobsters">Lobste.rs</a>
+        <div class="clear"></div>
+        <a href="/moderations">Moderation Log</a> /
         <% if @user && !@user.is_new? &&
         (iqc = InvitationRequest.verified_count) > 0 %>
-          <a href="/invitations">Invitation Queue (<%= iqc %>)</a>
+          <a href="/invitations">Invitation Queue (<%= iqc %>)</a> /
         <% end %>
-        <a href="/privacy">Privacy</a>
+        <a href="/privacy">Privacy</a> /
         <a href="/about">About</a>
       </div>
       <div class="clear"></div>

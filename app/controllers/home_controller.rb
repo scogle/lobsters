@@ -9,7 +9,7 @@ class HomeController < ApplicationController
       render :action => "about"
     rescue
       render :text => "<div class=\"box wide\">" <<
-        "A mystery." <<
+        "A mystery" <<
         "</div>", :layout => "application"
     end
   end

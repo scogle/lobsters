@@ -1,9 +1,10 @@
+@import "config";
+
 /*
  *= require select2
  *= require_self
  *= require mobile
 */
-
 
 /* generics */
 
@@ -252,7 +253,7 @@ div#inside {
 	font-weight: bold;
 	padding: 5px 42px 5px 10px;
 	margin-top: 1em;
-	margin-bottom: 0.5em;
+	margin-bottom: 1em;
 }
 
 #headerleft {
@@ -260,13 +261,12 @@ div#inside {
 }
 
 #l_holder {
-	background: #ee0000 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAL0ALQAtZF7+HAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wCCBAuLt2rqugAAACMSURBVDjL1ZMxCsJQEERfRPEk9im9mGfxBpaCnaXmBraeQEidKsKz2eIb/peEIOLAwu4Ws7PMbsUAKlOwYCaWmd4aWCV1B4yXpR59R61SitwKDdBHfgPaSTsF8zOmHz5NLykAeCRqvuvCfxGcgP0YF3ZqHy7c1Yt6jfo8dCF3idvkQjcRRVQ/f6bZBC+RBoeZnlCyqwAAAABJRU5ErkJggg==) no-repeat;
+	background: url('/logo.gif') no-repeat;
 	background-position: center;
 	float: left;
 	display: block;
 	width: 16px;
 	height: 16px;
-	padding: 1px;
 	margin-left: 4px;
 	margin-right: 11px;
 }
@@ -323,15 +323,17 @@ div#leader {
 /* footer */
 
 div#footer {
-	float: right;
+	//float: right;
+	//text-align: center;
 	font-weight: bold;
-	margin-top: 1.5em;
+	margin: 2em 40px;
 	padding-right: 42px;
+	line-height: 2em;
 }
 div#footer a {
 	color: #999;
 	text-decoration: none;
-	padding-left: 0.75em;
+	//padding-left: 0.75em;
 }
 
 
