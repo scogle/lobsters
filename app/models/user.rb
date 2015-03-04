@@ -14,11 +14,8 @@ class User < ActiveRecord::Base
     :through => :tag_filters,
     :source => :tag,
     :dependent => :delete_all
-  belongs_to :invited_by_user,
-    :class_name => "User"
   belongs_to :banned_by_user,
     :class_name => "User"
-  has_many :invitations
   has_many :votes
   has_many :voted_stories, -> { where('votes.comment_id' => nil) },
     :through => :votes,
