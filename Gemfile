@@ -39,6 +39,7 @@ gem "mail"
 # for heroku
 gem "rails_12factor"
 gem "foreman"
+gem "taps"
 
 group :test, :development do
   gem "rspec-rails", "~> 2.6"
