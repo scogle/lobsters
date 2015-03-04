@@ -35,7 +35,7 @@ Lobsters::Application.routes.draw do
 
     get "/signup" => "signup#index"
     post "/signup" => "signup#signup"
-    get "/signup/invite" => "signup#invite"
+    #get "/signup/invite" => "signup#invite"
 
     get "/login/forgot_password" => "login#forgot_password",
       :as => "forgot_password"
@@ -47,7 +47,7 @@ Lobsters::Application.routes.draw do
     get "/t/:tag" => "home#tagged", :as => "tag", :format => /html|rss/
     get "/t/:tag/page/:page" => "home#tagged"
 
-    get "/search" => "search#index"
+    #get "/search" => "search#index"
 
     resources :stories do
       post "upvote"
@@ -96,17 +96,17 @@ Lobsters::Application.routes.draw do
     get "/filters" => "filters#index"
     post "/filters" => "filters#update"
 
-    post "/invitations" => "invitations#create"
-    get "/invitations" => "invitations#index"
-    get "/invitations/request" => "invitations#build"
-    post "/invitations/create_by_request" => "invitations#create_by_request",
-      :as => "create_invitation_by_request"
-    get "/invitations/confirm/:code" => "invitations#confirm_email"
-    post "/invitations/send_for_request" => "invitations#send_for_request",
-      :as => "send_invitation_for_request"
-    get "/invitations/:invitation_code" => "signup#invited"
-    post "/invitations/delete_request" => "invitations#delete_request",
-      :as => "delete_invitation_request"
+    # post "/invitations" => "invitations#create"
+    # get "/invitations" => "invitations#index"
+    # get "/invitations/request" => "invitations#build"
+    # post "/invitations/create_by_request" => "invitations#create_by_request",
+    #   :as => "create_invitation_by_request"
+    # get "/invitations/confirm/:code" => "invitations#confirm_email"
+    # post "/invitations/send_for_request" => "invitations#send_for_request",
+    #   :as => "send_invitation_for_request"
+    # get "/invitations/:invitation_code" => "signup#invited"
+    # post "/invitations/delete_request" => "invitations#delete_request",
+    #   :as => "delete_invitation_request"
 
     get "/moderations" => "moderations#index"
     get "/moderations/page/:page" => "moderations#index"
