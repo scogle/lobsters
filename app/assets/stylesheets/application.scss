@@ -20,12 +20,12 @@ body, textarea, input, button {
 }
 
 a {
-	color: #2562dc;
+	color: $blue;
 	cursor: pointer;
 }
 
 ol.stories.list li.story div.details span.link a:visited {
-	color: #7395d9;
+	color: lighten($blue, 20%);
 }
 
 h1 {
