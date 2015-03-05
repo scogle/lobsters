@@ -39,11 +39,6 @@
   <label class="required">Joined:</label>
   <span class="d">
     <%= time_ago_in_words_label(@showing_user.created_at) %> ago
-    <% if @showing_user.invited_by_user %>
-      by invitation from
-      <%= link_to @showing_user.invited_by_user.try(:username),
-        @showing_user.invited_by_user %>
-    <% end %>
   </span>
   <br>
 
